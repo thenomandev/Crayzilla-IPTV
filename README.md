@@ -7,7 +7,7 @@ Welcome to the official repository of **Crayzilla IPTV**. This project provides 
 ## 🚀 Official Website & App
 You can access our web portal directly or download our official Android application.
 * **🌐 Web Portal:** [https://thenomandev.github.io/](https://thenomandev.github.io/)
-* **📥 Download APK:** [Click Here to Download v1.1]([https://thenomandev.github.io/CrayzillaIPTV_v1.1.apk](https://github.com/thenomandev/thenomandev.github.io/releases/download/v1.1/CrayzillaIPTV_v1.1.apk))
+* **📥 Download APK:** [Click Here to Download v1.1](https://github.com/thenomandev/thenomandev.github.io/releases/download/v1.1/CrayzillaIPTV_v1.1.apk)
 
 ---
 
@@ -44,4 +44,3 @@ This repository does not host any media files or streams on its server. It merel
 
 ---
 ⚡ *Powered by **Crayzilla Labs** & Developed by **@thenomandev***
-
