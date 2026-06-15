@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crayzilla IPTV - Premium Playlist</title>
+    <!-- Google Fonts for Styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #ED0000; /* আপনার পছন্দের লাল কালার কোড */
+            --bg-color: #0B0F19;
+            --card-bg: #151D30;
+            --text-color: #FFFFFF;
+            --text-muted: #8A99AD;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(180deg, rgba(237, 0, 0, 0.2) 0%, rgba(11, 15, 25, 1) 100%);
+            padding: 60px 20px 40px 20px;
+            text-align: center;
+        }
+
+        .logo-area {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .logo-area span {
+            color: var(--primary-color);
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* CTA Buttons Container */
+        .cta-container {
+            max-width: 650px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* M3U Link Copy Box */
+        .playlist-box {
+            background: var(--card-bg);
+            border: 2px solid #222F4D;
+            border-radius: 12px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            gap: 15px;
+        }
+
+        .link-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            text-align: left;
+            /* লিংক বক্সের বাইরে চলে যাওয়া বন্ধ করার ম্যাজিক কোড */
+            word-break: break-all; 
+            white-space: normal;
+            user-select: all;
+        }
+
+        .btn-copy {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-copy:hover {
+            background-color: #b50000;
+            transform: scale(1.03);
+        }
+
+        /* APK Download Button */
+        .btn-download {
+            background: linear-gradient(135deg, #ED0000 0%, #990000 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 8px 20px rgba(237, 0, 0, 0.3);
+            transition: 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(237, 0, 0, 0.5);
+        }
+
+        /* Features / Details Section */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-bottom: 3px solid var(--primary-color);
+            box-shadow: 0 15px 30px rgba(237, 0, 0, 0.1);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #060911;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            border-top: 1px solid #151D30;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .brand-footer {
+            color: var(--text-color);
+            font-weight: 600;
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .brand-footer span {
+            color: var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .logo-area { font-size: 2.2rem; }
+            .playlist-box { flex-direction: column; text-align: center; padding: 20px 15px; }
+            .link-text { text-align: center; }
+            .btn-copy { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-area">Crayzilla <span>IPTV</span></div>
+        <p>আপনার প্রিয় আইপিটিভি প্লেয়ারের জন্য হাই-কোয়ালিটি এবং বাফারিং-মুক্ত সোর্স লিংক। নিচের মেইন M3U লিংকটি কপি করুন অথবা আমাদের অফিসিয়াল অ্যাপটি ডাউনলোড করুন।</p>
+        
+        <div class="cta-container">
+            <!-- M3U Link Box -->
+            <div class="playlist-box">
+                <div class="link-text" id="m3uLink">https://thenomandev.github.io/Crayzilla-IPTV/Channel/Bangladesh/BD.m3u</div>
+                <button class="btn-copy" onclick="copyPlaylistLink()"><i class="fa-regular fa-copy"></i> Copy Link</button>
+            </div>
+
+            <!-- APK Download Button -->
+            <!-- href এর ভেতর আপনার apk ফাইলের সঠিক লিংকটি দিয়ে দিন -->
+            <a href="https://github.com/thenomandev/Crayzilla-IPTV/releases/tag/v1.1" class="btn-download" download>
+                <i class="fa-solid fa-download"></i> Download Crayzilla IPTV APK
+            </a>
+        </div>
+    </header>
+
+    <!-- Details / Features Section -->
+    <div class="container">
+        <h2 class="section-title">Playlist Features</h2>
+        
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Fast Streaming</h3>
+                <p>সবগুলো চ্যানেল হাই-স্পিড সার্ভার দ্বারা চালিত, যার ফলে বাফারিং ছাড়াই স্মুথলি স্ট্রিমিং করা সম্ভব।</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Auto Backup Link</h3>
+                <p>একটি লিংক ডাউন থাকলে প্লেয়ার স্বয়ংক্রিয়ভাবে ব্যাকআপ সার্ভারে সুইচ করবে। খেলা মিস হওয়ার কোনো চান্স নেই!</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <i class="fa-solid fa-tv"></i>
+                <h3>Multi-App Support</h3>
+                <p>Televizo, IPTV Smarters, OTT Navigator সহ যেকোনো স্ট্যান্ডার্ড আইপিটিভি প্লেয়ারে সহজেই ব্যবহারযোগ্য।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Crayzilla IPTV. All Rights Reserved.</p>
+        <div class="brand-footer">Powered by <span>Crayzilla Labs</span></div>
+    </footer>
+
+    <!-- JavaScript for Copy Button -->
+    <script>
+        function copyPlaylistLink() {
+            const linkText = document.getElementById("m3uLink").innerText;
+            navigator.clipboard.writeText(linkText).then(() => {
+                const copyBtn = document.querySelector(".btn-copy");
+                copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                copyBtn.style.backgroundColor = '#00C851';
+                
+                setTimeout(() => {
+                    copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy Link';
+                    copyBtn.style.backgroundColor = '#ED0000';
+                }, 2000);
+            }).catch(err => {
+                alert("লিংকটি কপি করা যায়নি, দয়া করে ম্যানুয়ালি কপি করুন।");
+            });
+        }
+    </script>
+
+</body>
+</html>
