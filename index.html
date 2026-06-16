@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crayzilla IPTV - Premium Playlist</title>
+    <title>ThenomanDev | Crayzilla IPTV Official Website</title>
 
-    <!-- 📊 Google tag (gtag.js) - Google Analytics -->
-    <!-- আপনার আসল Measurement ID-টি G-XXXXXXXXXX এর জায়গায় বসিয়ে দিন -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
+<meta name="description" content="Official ThenomanDev website. Download Crayzilla IPTV APK, access IPTV playlists, live TV streaming and entertainment content.">
+
+<meta name="keywords" content="ThenomanDev, Crayzilla IPTV, IPTV, Live TV, IPTV Playlist, Bangladesh IPTV">
+
+<meta name="author" content="ThenomanDev">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://thenomandev.github.io/">
+
+<meta property="og:title" content="ThenomanDev | Crayzilla IPTV">
+<meta property="og:description" content="Official Crayzilla IPTV website by ThenomanDev.">
+<meta property="og:url" content="https://thenomandev.github.io/">
+<meta property="og:type" content="website">
+
+<!-- 📊 Google tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CEKSHHJJJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5CEKSHHJJJ');
+</script>
 
     <!-- Google Fonts for Styling -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -589,40 +604,4 @@
             document.getElementById('total-dl').innerText = finalDL.toLocaleString();
 
             // রিয়েল টাইম রেশিও অ্যানালিসিস ক্যালকুলেশন
-            document.getElementById('today-dl').innerText = Math.max(2, Math.floor(finalDL * 0.09)).toLocaleString();
-            document.getElementById('weekly-dl').innerText = Math.max(8, Math.floor(finalDL * 0.38)).toLocaleString();
-            document.getElementById('monthly-dl').innerText = Math.max(15, Math.floor(finalDL * 0.78)).toLocaleString();
-
-            // রিয়াল ভিজিটর ট্র্যাকিং কাউন্টার ব্যাকআপ সহ
-            const trackerName = "thenomandev_live_visits";
-            try {
-                const visitResponse = await fetch(`https://api.countapi.xyz/hit/${trackerName}/counter`);
-                const visitData = await visitResponse.json();
-                document.getElementById('total-vs').innerText = (visitData.value + 165).toLocaleString();
-            } catch (e) {
-                let simulatedVisitors = finalDL * 3 + 112;
-                document.getElementById('total-vs').innerText = simulatedVisitors.toLocaleString();
-            }
-        }
-
-        window.onload = function() {
-            loadAnalytics();
-        }
-    </script>
-
-    <!-- Start of Tawk.to Script -->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6a3058f916a8811d4c59596c/1jr6dn46e';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!-- End of Tawk.to Script -->
-
-</body>
-</html>
+            document.getElementById('tod
